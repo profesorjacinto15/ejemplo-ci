@@ -24,3 +24,4 @@ jobs:
 
     - name: 3. Ejecutar las pruebas unitarias con Maven
       run: mvn test
+      working-directory: ./Ejemplo-CI
