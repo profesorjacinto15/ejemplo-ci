@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '25'
-        distribution: 'temuri'
+        distribution: 'temurin'
 
     - name: 3. Ejecutar las pruebas unitarias con Maven
       run: mvn test
