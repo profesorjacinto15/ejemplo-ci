@@ -17,7 +17,7 @@ public class GestionProductos {
     public boolean eliminarProducto(Producto producto) {
        for(Producto produ: lista) {
            if (produ.getId().equals(producto.getId()))
-               lista.remove(producto)
+               lista.remove(producto);
                return true;
        }
        return false;
