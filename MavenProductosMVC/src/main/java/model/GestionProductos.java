@@ -1,4 +1,4 @@
-package modelo;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,13 +10,13 @@ public class GestionProductos {
         this.lista = new ArrayList<>();
     }
 
-    public void añadirProducto(String id, String nombre, int cantidad) {
-        lista.add(new Producto(id,nombre,cantidad));
+    public void añadirProducto(String codigo, String nombre, double precio, int stock) {
+        lista.add(new Producto(codigo, nombre, precio, stock));
     }
 
-    public void eliminarProducto(int indice) {
-        if (indice>=0 && indice < lista.size()) {
-            lista.remove(indice);
+    public void eliminarProducto(int index) {
+        if (index>=0 && index<lista.size()) {
+            lista.remove(index);
         }
     }
 
